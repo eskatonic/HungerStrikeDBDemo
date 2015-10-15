@@ -16,7 +16,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".DisplayContact"/>
+        <activity android:name=".DisplayRecipe"/>
 
     </application>
 

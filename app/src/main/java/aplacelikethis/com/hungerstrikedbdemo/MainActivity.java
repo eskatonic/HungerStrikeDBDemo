@@ -1,6 +1,8 @@
+// Code for this project was sampled from Tutorials Point:
+// http://www.tutorialspoint.com/android/android_sqlite_database.htm
+
 package aplacelikethis.com.hungerstrikedbdemo;
 
-import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -17,7 +19,6 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
         mydb = new DBHelper(this);
-        ArrayList array_list = mydb.getAllCotacts();
+        ArrayList array_list = mydb.getAllRecipes();
         ArrayAdapter arrayAdapter=new ArrayAdapter(this,android.R.layout.simple_list_item_1, array_list);
 
         obj = (ListView)findViewById(R.id.listView1);
@@ -45,7 +46,7 @@ public class MainActivity extends AppCompatActivity
                 Bundle dataBundle = new Bundle();
                 dataBundle.putInt("id", id_To_Search);
 
-                Intent intent = new Intent(getApplicationContext(),DisplayContact.class);
+                Intent intent = new Intent(getApplicationContext(),DisplayRecipe.class);
 
                 intent.putExtras(dataBundle);
                 startActivity(intent);
@@ -69,7 +70,7 @@ public class MainActivity extends AppCompatActivity
             case R.id.item1:Bundle dataBundle = new Bundle();
                 dataBundle.putInt("id", 0);
 
-                Intent intent = new Intent(getApplicationContext(),DisplayContact.class);
+                Intent intent = new Intent(getApplicationContext(),DisplayRecipe.class);
                 intent.putExtras(dataBundle);
 
                 startActivity(intent);

@@ -7,13 +7,13 @@
     <string name="edit">Edit Contact</string>
     <string name="delete">Delete Contact</string>
     <string name="title_activity_display_contact">DisplayContact</string>
-    <string name="name">Name</string>
-    <string name="phone">Phone</string>
-    <string name="email">Email</string>
-    <string name="street">Street</string>
-    <string name="country">City/State/Zip</string>
-    <string name="save">Save Contact</string>
-    <string name="deleteContact">Are you sure, you want to delete it.</string>
+    <string name="name">Recipe Name</string>
+    <string name="calories">Calories</string>
+    <string name="ingredient1">First Ingredient</string>
+    <string name="ingredient2">Second Ingredient</string>
+    <string name="ingredient3">Third Ingredient</string>
+    <string name="save">Save Recipe</string>
+    <string name="delete_recipe">Are you sure you want to delete it?</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
 </resources>
