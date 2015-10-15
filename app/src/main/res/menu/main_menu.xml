@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <item android:id="@+id/item1"
-          android:icon="@drawable/add"
+          android:icon="@mipmap/dont_panic"
           android:title="@string/Add_New" >
     </item>
 
