@@ -51,10 +51,10 @@ public class DisplayRecipe extends Activity {
                 rs.moveToFirst();
 
                 String nam = rs.getString(rs.getColumnIndex(DBHelper.RECIPES_COLUMN_NAME));
-                String phon = rs.getString(rs.getColumnIndex(DBHelper.RECIPES_COLUMN_CALORIES));
-                String emai = rs.getString(rs.getColumnIndex(DBHelper.RECIPES_COLUMN_INGREDIENT1));
-                String stree = rs.getString(rs.getColumnIndex(DBHelper.RECIPES_COLUMN_INGREDIENT2));
-                String plac = rs.getString(rs.getColumnIndex(DBHelper.RECIPES_COLUMN_INGREDIENT3));
+                String cals = rs.getString(rs.getColumnIndex(DBHelper.RECIPES_COLUMN_CALORIES));
+                String ing1 = rs.getString(rs.getColumnIndex(DBHelper.RECIPES_COLUMN_INGREDIENT1));
+                String ing2 = rs.getString(rs.getColumnIndex(DBHelper.RECIPES_COLUMN_INGREDIENT2));
+                String ing3 = rs.getString(rs.getColumnIndex(DBHelper.RECIPES_COLUMN_INGREDIENT3));
 
                 if (!rs.isClosed())
                 {
@@ -67,19 +67,19 @@ public class DisplayRecipe extends Activity {
                 name.setFocusable(false);
                 name.setClickable(false);
 
-                calories.setText((CharSequence) phon);
+                calories.setText((CharSequence) cals);
                 calories.setFocusable(false);
                 calories.setClickable(false);
 
-                ingredient1.setText((CharSequence) emai);
+                ingredient1.setText((CharSequence) ing1);
                 ingredient1.setFocusable(false);
                 ingredient1.setClickable(false);
 
-                ingredient2.setText((CharSequence) stree);
+                ingredient2.setText((CharSequence) ing2);
                 ingredient2.setFocusable(false);
                 ingredient2.setClickable(false);
 
-                ingredient3.setText((CharSequence) plac);
+                ingredient3.setText((CharSequence) ing3);
                 ingredient3.setFocusable(false);
                 ingredient3.setClickable(false);
             }
