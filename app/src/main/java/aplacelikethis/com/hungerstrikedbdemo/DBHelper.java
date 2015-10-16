@@ -20,7 +20,7 @@ public class DBHelper extends SQLiteOpenHelper {
     public static final String RECIPES_COLUMN_INGREDIENT2 = "ingredient2";
     public static final String RECIPES_COLUMN_INGREDIENT3 = "ingredient3";
     public static final String RECIPES_COLUMN_CALORIES = "calories";
-    private HashMap hp;
+    //private HashMap hp;
 
     public DBHelper(Context context)
     {
